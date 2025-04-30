@@ -11,7 +11,7 @@ export default function App() {
       <Text style={styles.subtitle}>Belajar Text Componet dan Styling</Text>
 
       {/*Teks dengan gaya italic dan bold */}
-      <Text style={styles.emphasis}>Ini adalah teks penting</Text>
+      <Text style={styles.emphasis}> ADALAH TEKS PENTING</Text>
 
       {/*Contoh teks multiline dengan batasan baris */}
       <Text numberOfLines={3} ellipsizeMode="tail" style={styles.multiline}>
@@ -26,7 +26,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: 'yellow',
     alignItems: 'center',       // Tengah horizontal
     justifyContent: 'center',   // Tengah vertikal
     paddingHorizontal: 20,
