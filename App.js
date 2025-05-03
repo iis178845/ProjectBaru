@@ -1,22 +1,55 @@
-import React, { Component } from 'react';
-import {Text, View, Image, TextInput} from 'react-native';
+import React, {Component} from 'react';
+import {Text, View, Image, TextInput, StyleSheet} from 'react-native';
 
 const App = () => {
-  return (
-    <View style={{paddingLeft: 10, paddingTop: 20}}>
-      <View style={{width: 80, height: 80, backgroundColor: '#60B5FF'}}/>
-      <Text>PRAWITO</Text>
-      <Toto/>
-      <Text>Otto</Text>
-      <Text>Arkintas</Text>
-      <Photo />
-      <TextInput style={{borderWidth: 1}} />
-      <BoxGreen/>
-      <Profile/>
-    </View>
-  );
+  return <StylingReactNativeComponent />;
 };
 
+const StylingReactNativeComponent = () => {
+  return (
+    <View>
+      <Text style={styles.text}>Styling Component</Text>
+      <View 
+        style={{
+          width: 100, 
+          height: 100, 
+          backgroundColor: '#60B5FF', 
+          borderWidth: 2, 
+          borderColor: '#5f27cd', 
+          marginTop: 20, 
+          marginLeft: 20,
+          }} 
+          />
+    </View>
+  )
+}
+const styles = StyleSheet.create({
+  text: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    color: '#10ac84',
+    marginLeft: 20,
+    marginTop: 40, 
+
+  }
+})
+
+const SampleComponent = () => {
+  return (
+    <View >
+    <View style={{width: 80, height: 80, backgroundColor: '#60B5FF'}}/>
+    <Text>PRAWITO</Text>
+    <Toto/>
+    <Text>Otto</Text>
+    <Text>Arkintas</Text>
+    <Photo />
+    <TextInput style={{borderWidth: 1}} />
+    <BoxGreen/>
+    <Profile/>
+    </View>
+
+  );
+};
 const Toto = () => {
   return <Text>Toto Mahasiswa Poltek SCI Prodi TRKJ SEMESTER 4</Text>;
 };
