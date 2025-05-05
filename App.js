@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Text, View, Image, TextInput, StyleSheet} from 'react-native';
+import macbook from './assets/macbook.jpeg';
 
 const App = () => {
   return <StylingReactNativeComponent />;
@@ -20,7 +21,16 @@ const StylingReactNativeComponent = () => {
           marginLeft: 20,
           }} 
           />
-    </View>
+          <View style={{padding: 12, backgroundColor: '#f2f2f2', width: 212, borderRadius: 8}} >
+            <Image source={macbook} style={{width: 188, height: 107, borderRadius: 8}} />
+            <Text style={{fontSize: 14, fontWeight: 'bold', marginTop: 16}} >New Macbook Pro 2019</Text>
+            <Text style={{fontSize: 12, fontWeight: 'bold', color: '#f2994A', marginTop: 16}} >Rp. @5.000.000</Text>
+            <Text style={{fontSize: 12, fontWeight: '300', marginTop: 12}} >Jakarta Barat</Text>
+          <View style={{backgroundColor: '#6FCF97', paddingVertical: 6, borderRadius: 25, marginTop: 20}} >
+            <Text style={{fontSize: 14, fontWeight: '600', color: 'white', textAlign: 'center'}} >BELI</Text>
+          </View>
+          </View>
+          </View>
   )
 }
 const styles = StyleSheet.create({
